@@ -1,0 +1,37 @@
+﻿using Framework.BaseClasses;
+using Framework.PageClasses;
+using NUnit.Framework;
+
+namespace Framework
+{
+    [TestFixture]
+    public class Class1: BaseSetup
+    {
+        [Test]
+        public void TC01()
+        {
+            Browser.Open();
+        }
+
+    }
+}
+
+
+
+Browser.Open();
+Browser.Maximize();
+Browser.GoBack();
+Browser.RefreshPage();
+Browser.SwitchToWindow();
+Browser.SwitchToParent();
+Browser.SwitchToIFrame();
+
+Driver.WaitFor(2);
+Driver.WaitForElement("ElementXPath");
+Driver.ClickOn("ElementXPath");
+Driver.ClickOnById("ElementID");
+Driver.ClickOnByLinkText("linkText");
+Driver.InsertText("TextfieldXPath","Text");
+Driver.SelectFromDropDown("TextfieldXPath","Text");
+Driver.GoBack();
+Driver.Close();
