@@ -11,10 +11,7 @@ namespace TestCases
         [Test]
         public void GoogleTC1()
         {
-
-
-
-
+            Browser.Open();
         }
 
     }
